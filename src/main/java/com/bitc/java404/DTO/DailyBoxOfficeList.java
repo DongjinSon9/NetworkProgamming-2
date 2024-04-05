@@ -1,13 +1,11 @@
 package com.bitc.java404.DTO;
 
-import java.time.LocalDate;
-
 public class DailyBoxOfficeList {
     private String rnum;
     private String rank;
     private String rankInten;
     private String rankOldAndNew;
-    private String movieCD;
+    private String movieCd;
     private String movieNm;
     private String openDt;
     private String salesAmt;
@@ -34,8 +32,8 @@ public class DailyBoxOfficeList {
     public String getRankOldAndNew() { return rankOldAndNew; }
     public void setRankOldAndNew(String value) { this.rankOldAndNew = value; }
 
-    public String getMovieCD() { return movieCD; }
-    public void setMovieCD(String value) { this.movieCD = value; }
+    public String getMovieCd() { return movieCd; }
+    public void setMovieCd(String value) { this.movieCd = value; }
 
     public String getMovieNm() { return movieNm; }
     public void setMovieNm(String value) { this.movieNm = value; }

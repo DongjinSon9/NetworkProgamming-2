@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cfc3bc1-247f-463c-96a8-0052e0b91f34" name="변경" comment="7교시 - MemberDTO 생성해서 메서드에 적용 2">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bitc/java404/DTO/BoxOffice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bitc/java404/DTO/BoxOfficeResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bitc/java404/DTO/DailyBoxOfficeList.java" afterDir="false" />
+    <list default="true" id="1cfc3bc1-247f-463c-96a8-0052e0b91f34" name="변경" comment="7교시 - 영화진흥원 정보 가져와서 DTO로 만들기">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bitc/java404/BoxOfficeParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bitc/java404/DTO/DailyBoxOfficeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bitc/java404/DTO/DailyBoxOfficeList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bitc/java404/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bitc/java404/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712284620250</updated>
       <workItem from="1712284621357" duration="1209000" />
-      <workItem from="1712285848169" duration="12449000" />
+      <workItem from="1712285848169" duration="16345000" />
     </task>
     <task id="LOCAL-00001" summary="3교시 - sql 연결하기">
       <option name="closed" value="true" />
@@ -171,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712300849414</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="7교시 - 영화진흥원 정보 가져와서 DTO로 만들기">
+      <option name="closed" value="true" />
+      <created>1712302693293</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712302693293</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +192,8 @@
     <MESSAGE value="5교시 - mysql 이용해서 delete, update" />
     <MESSAGE value="6교시 - MemberDTO 생성해서 메서드에 적용" />
     <MESSAGE value="7교시 - MemberDTO 생성해서 메서드에 적용 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="7교시 - MemberDTO 생성해서 메서드에 적용 2" />
+    <MESSAGE value="8교시 - 영화진흥원 정보 가져와서 DTO로 만들기" />
+    <MESSAGE value="7교시 - 영화진흥원 정보 가져와서 DTO로 만들기" />
+    <option name="LAST_COMMIT_MESSAGE" value="7교시 - 영화진흥원 정보 가져와서 DTO로 만들기" />
   </component>
 </project>
