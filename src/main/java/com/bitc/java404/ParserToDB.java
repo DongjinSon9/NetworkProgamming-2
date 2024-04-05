@@ -5,7 +5,9 @@ import java.sql.*;
 import java.text.Format;
 
 public class ParserToDB {
-    public void insertDB() {
+
+
+    public void insertDB(MemberDTO member) {
 //        데이터베이스 접속을 위한 클래스 객체 생성
         Connection conn = null;
 
@@ -33,12 +35,12 @@ public class ParserToDB {
 //            setXX() 메서드를 통해서 SQL에 입력된 ' ? ' 부분에 데이터를 추가함.
 //            setXX() 메서드는 기본 데이터 타입을 모두 제공함.(String, Short, Boolean, Long, Byte, Float, Double, Int ....)
 //            setXX() 메서드의 첫번째 매개변수는 ' ? '의 번호, 두번째 매개변수는 입력될 데이터
-            pstmt.setString(1, "test3");
-            pstmt.setString(2, "1234");
-            pstmt.setString(3, "테스터3");
-            pstmt.setString(4, "test3@bit.ac.kr");
-            pstmt.setString(5, "01056781234");
-            pstmt.setString(6, "부산시");
+            pstmt.setString(1, member.getUser_id());
+            pstmt.setString(2, member.getUser_pw());
+            pstmt.setString(3, member.getUser_name());
+            pstmt.setString(4, member.getUser_email());
+            pstmt.setString(5, member.getUser_phone());
+            pstmt.setString(6, member.getUser_addr());
 
 //            execute() : select문 실행 시 사용. 반환값으로 ResultSet이라는 타입으로 출력
 //            executeUpdate() : insert, update, delete 문 실행 시 사용, 반환값으로 실행된 건수가 출력됨
@@ -183,7 +185,7 @@ public class ParserToDB {
     }
 
 
-    public void updateDB() {
+    public void updateDB(MemberDTO member) {
 
         Connection conn = null;
         String dbUrl = "jdbc:mysql://localhost:3306/testdb";
@@ -201,10 +203,10 @@ public class ParserToDB {
             sql += "where user_id = ? ";
 
             pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, "테스트아이디1");
-            pstmt.setString(2, "test2@gmail.com");
-            pstmt.setString(3, "01011112222");
-            pstmt.setString(4, "test1");
+            pstmt.setString(1, member.getUser_name());
+            pstmt.setString(2, member.getUser_email());
+            pstmt.setString(3, member.getUser_phone());
+            pstmt.setString(4, member.getUser_id());
 
             int result = pstmt.executeUpdate();
 
