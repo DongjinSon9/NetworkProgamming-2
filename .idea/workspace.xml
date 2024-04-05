@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cfc3bc1-247f-463c-96a8-0052e0b91f34" name="변경" comment="3교시 - sql 연결하기">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bitc/java404/ParserToDB.java" afterDir="false" />
+    <list default="true" id="1cfc3bc1-247f-463c-96a8-0052e0b91f34" name="변경" comment="5교시 - mysql 이용해서 insert, select">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bitc/java404/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bitc/java404/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bitc/java404/ParserToDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bitc/java404/ParserToDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712284620250</updated>
       <workItem from="1712284621357" duration="1209000" />
-      <workItem from="1712285848169" duration="5811000" />
+      <workItem from="1712285848169" duration="6259000" />
     </task>
     <task id="LOCAL-00001" summary="3교시 - sql 연결하기">
       <option name="closed" value="true" />
@@ -123,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712285936607</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="5교시 - mysql 이용해서 insert, select">
+      <option name="closed" value="true" />
+      <created>1712296091522</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712296091522</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="3교시 - sql 연결하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="3교시 - sql 연결하기" />
+    <MESSAGE value="5교시 - mysql 이용해서 insert, select" />
+    <option name="LAST_COMMIT_MESSAGE" value="5교시 - mysql 이용해서 insert, select" />
   </component>
 </project>

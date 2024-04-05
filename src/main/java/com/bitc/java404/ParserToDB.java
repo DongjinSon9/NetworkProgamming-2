@@ -111,9 +111,10 @@ public class ParserToDB {
                 System.out.println("---------------------------------");
             }
         } catch (SQLException e) {
-
+            System.out.println("데이터베이스 사용 중 오류가 발생했습니다.");
+            System.out.println("sqlexception: " + e.getMessage());
         } catch (Exception e) {
-            
+            e.printStackTrace();
         }
         finally {
             try {
