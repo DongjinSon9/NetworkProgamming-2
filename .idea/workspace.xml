@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cfc3bc1-247f-463c-96a8-0052e0b91f34" name="변경" comment="6교시 - MemberDTO 생성해서 메서드에 적용">
+    <list default="true" id="1cfc3bc1-247f-463c-96a8-0052e0b91f34" name="변경" comment="7교시 - MemberDTO 생성해서 메서드에 적용 2">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bitc/java404/DTO/BoxOffice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bitc/java404/DTO/BoxOfficeResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bitc/java404/DTO/DailyBoxOfficeList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bitc/java404/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bitc/java404/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,28 +60,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.parserToDB [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.parserToDB [:Main.main()].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bitc.java404.Main" />
       <module name="parserToDB.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bitc.java404.*" />
+          <option name="PATTERN" value="com.bitc.java404.DTO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712284620250</updated>
       <workItem from="1712284621357" duration="1209000" />
-      <workItem from="1712285848169" duration="10568000" />
+      <workItem from="1712285848169" duration="12449000" />
     </task>
     <task id="LOCAL-00001" summary="3교시 - sql 연결하기">
       <option name="closed" value="true" />
@@ -159,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712299323456</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="7교시 - MemberDTO 생성해서 메서드에 적용 2">
+      <option name="closed" value="true" />
+      <created>1712300849414</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712300849414</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +183,7 @@
     <MESSAGE value="5교시 - mysql 이용해서 insert, select 2" />
     <MESSAGE value="5교시 - mysql 이용해서 delete, update" />
     <MESSAGE value="6교시 - MemberDTO 생성해서 메서드에 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="6교시 - MemberDTO 생성해서 메서드에 적용" />
+    <MESSAGE value="7교시 - MemberDTO 생성해서 메서드에 적용 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="7교시 - MemberDTO 생성해서 메서드에 적용 2" />
   </component>
 </project>
