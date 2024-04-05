@@ -1,5 +1,6 @@
 package com.bitc.java404;
 
+import java.security.PublicKey;
 import java.sql.*;
 import java.text.Format;
 
@@ -118,6 +119,8 @@ public class ParserToDB {
         }
         finally {
             try {
+//                리소스 닫는 순서는 리소스를 열었던 순서의 반대로 진행
+//                ResultSet > Statement > Connection
                 if (rs != null) {
                     rs.close();
                 }
@@ -131,8 +134,115 @@ public class ParserToDB {
 
             }
         }
+    }
+
+
+    public void deleteDB(String userId) {
+        Connection conn = null;
+
+        String dbUrl = "jdbc:mysql://localhost:3306/testdb";
+        String dbUser = "java404";
+        String dbPass = "java404";
+
+        Statement stmt = null;
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            conn = DriverManager.getConnection(dbUrl, dbUser, dbPass);
+
+            String sql = "delete from member where user_id= '" + userId + "' ";
+
+            stmt = conn.createStatement();
+            int result = stmt.executeUpdate(sql);
+
+            if (result > 0) {
+                System.out.println(result + "건의 데이터가 삭제되었습니다.\n");
+            } else {
+                System.out.println("데이터가 삭제되지 않았습니다.\n");
+            }
+
+
+        } catch (SQLException e) {
+            System.out.println("데이터베이스 사용 중 오류가 발생했습니다.\n");
+            System.out.println("sqlexception: " + e.getMessage());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        finally {
+            try {
+                if (stmt != null) {
+                    stmt.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (Exception e) {
+
+            }
+        }
+    }
+
+
+    public void updateDB() {
+
+        Connection conn = null;
+        String dbUrl = "jdbc:mysql://localhost:3306/testdb";
+        String dbUser = "java404";
+        String dbPass = "java404";
+
+        PreparedStatement pstmt = null;
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            conn = DriverManager.getConnection(dbUrl, dbUser, dbPass);
+
+            String sql = "update member set ";
+            sql += "user_name = ?, user_email = ?, user_phone = ? ";
+            sql += "where user_id = ? ";
+
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, "테스트아이디1");
+            pstmt.setString(2, "test2@gmail.com");
+            pstmt.setString(3, "01011112222");
+            pstmt.setString(4, "test1");
+
+            int result = pstmt.executeUpdate();
+
+            if (result > 0) {
+                System.out.println(result + "건이 수정되었습니다.\n");
+            }
+
+
+        } catch (SQLException e) {
+            System.out.println("데이터베이스 사용 중 오류가 발생했습니다.");
+            System.out.println("sqlexception: " + e.getMessage() +"\n");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+                if (pstmt != null) {
+                    pstmt.close();
+                }
+            } catch (Exception e) {
+
+            }
+        }
 
 
 
     }
+
+
+
+
+
+
+
+
+
+
 }

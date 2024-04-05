@@ -45,5 +45,11 @@ public class Main {
         ParserToDB parser = new ParserToDB();
 //        parser.insertDB();
         parser.selectDB();
+        System.out.println("------데이터 삭제------");
+        parser.deleteDB("test3");
+        System.out.println("------데이터 수정------");
+        parser.updateDB();
+        parser.selectDB();
+
     }
 }
